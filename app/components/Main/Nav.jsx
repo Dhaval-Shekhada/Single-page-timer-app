@@ -14,10 +14,10 @@ render : function(){
                   <li className="menu-text">
                       Timer App</li>
                   <li>
-                      <IndexLink to='/' activeClassName="active" activeStyle ={{fontWeight: 'bold'}}>Timer</IndexLink>
+                      <IndexLink to='/' activeClassName="active-link" >Timer</IndexLink>
                   </li>
                   <li>
-                      <Link to='/' activeClassName="active" activeStyle ={{fontWeight: 'bold'}}>Counter</Link>
+                      <Link to='/countdown' activeClassName="active-link"> Countdown</Link>
                   </li>
 
 
@@ -27,7 +27,7 @@ render : function(){
           <div className="top-bar-right">
             <ul className = "menu">
               <li className ="menu-text">
-                  
+
                   Created by <a href ="https://github.com/Dhaval-Shekhada" target="_blank">Dhaval-Shekhada</a>
               </li>
 
