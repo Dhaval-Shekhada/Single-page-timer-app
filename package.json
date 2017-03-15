@@ -1,11 +1,13 @@
 {
   "name": "Reactboilerplate",
-  "version": "1.0.0",
+  "version": "0.0.0-semantically-released",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "commit": "git-cz",
     "test": "karma start",
-    "start": "node server.js"
+    "start": "node server.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "author": "",
   "license": "ISC",
@@ -30,7 +32,9 @@
     "babel-preset-stage-0": "^6.22.0",
     "blanket": "^1.2.3",
     "chai": "^3.5.0",
+    "commitizen": "2.9.6",
     "css-loader": "^0.23.1",
+    "cz-conventional-changelog": "2.0.0",
     "expect": "1.14.0",
     "foundation-sites": "^6.2.0",
     "jquery": "^2.2.1",
@@ -44,8 +48,15 @@
     "node-sass": "^3.4.2",
     "sass-loader": "^3.1.2",
     "script-loader": "^0.6.1",
+    "semantic-release": "^6.3.2",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.13"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dhaval-Shekhada/Single-page-timer-app.git"
+  },
+  "czConfig":{
+    "path":"node_modules/cz-conventional-changelog"
   }
-
 }
