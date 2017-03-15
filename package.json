@@ -39,6 +39,7 @@
     "foundation-sites": "^6.2.0",
     "jquery": "^2.2.1",
     "karma": "0.13.22",
+    "karma-chai": "0.1.0",
     "karma-chrome-launcher": "0.2.2",
     "karma-mocha": "0.2.2",
     "karma-mocha-reporter": "2.0.0",
@@ -57,10 +58,8 @@
     "url": "https://github.com/Dhaval-Shekhada/Single-page-timer-app.git"
   },
   "config": {
-   "commitizen": {
-       "path":"node_modules/cz-conventional-changelog"
-   }
- }
-
-
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  }
 }

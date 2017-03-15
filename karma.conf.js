@@ -4,10 +4,17 @@ module.exports =function(config){
  config.set({
   browsers: [process.env.CONTINOUS_INTEGRATION ? 'Firefox':'Chrome'],
   singleRun: true,
-  frameworks:['mocha'],
-  files:['app/tests/**/*.test.jsx'],
+  frameworks:['chai','mocha'],
+  plugins:[
+    "karma-chrome-launcher",
+    "karma-chai",
+    "karma-mocha",
+    "karma-webpack",
+    "karma-sourcemap-loader"
+  ],
+  files:['tests.bundle.js'],
   preprocessors:{
-    'app/tests/**/*.test.jsx':['webpack','sourcemap']
+    'tests.bundle.js':['webpack','sourcemap']
   },
   reporters:['mocha'],
 
