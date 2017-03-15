@@ -7,15 +7,11 @@ module.exports =function(config){
   //var isCi = process.env.CONTINUOUS_INTEGRATION === 'true',
 
  config.set({
-  browsers: ['Chrome'],
+  browsers: [process.env.CONTINUOUS_INTEGRATION ?'Firefox':'Chrome'],
   singleRun: true,
   frameworks:['mocha'],
 
-  files:['app/tests/**/*.test.jsx',
-        'node_modules/jquery/dist/jquery.min.js',
-        'node_modules/foundation-sites/dist/foundation.min.js',
-        'node_modules/foundation-sites/dist/foundation.min.css',
-      'node_modules/react-addons-test-utils/index.js'],
+  files:['app/tests/**/*.test.jsx'],
   preprocessors:{
     'app/tests/**/*.test.jsx':['webpack','sourcemap']
   },
@@ -29,19 +25,9 @@ module.exports =function(config){
   webpack : webpackConfig,
   webpackServer:{
     noInfo: true
-  },
-  customLaunchers: {
-           Chrome_travis_ci: {
-               base: 'Chrome',
-               flags: ['--no-sandbox']
-           }
-       }
+  }
+  
 });
-if (process.env.TRAVIS === 'true') {
-       config.browsers = ['Chrome_travis_ci'];
-       config.singleRun = true;
-       config.webpack.watch = false;
-   }
 
 
 };

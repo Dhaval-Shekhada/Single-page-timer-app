@@ -1,7 +1,7 @@
 var expect = require('expect');
 var React = require('react');
 var ReactDOM = require('react-dom');
-var $ = require('JQuery');
+var $ = require('jQuery');
 var TestUtils = require('react-addons-test-utils');
 
 var Clock = require('Clock');
