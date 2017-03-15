@@ -8,6 +8,10 @@ node_js:
   - '7'
   - '6'
   - '4'
+befor_install:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  
 before_script:
   - npm prune
 script:
