@@ -5,12 +5,12 @@ module.exports={
     './app/app.jsx'
   ],
   externals: {
-    jquery:'jQuery'
+    jquery:'jquery'
   },
   plugins: [
     new webpack.ProvidePlugin({
       '$':'jquery',
-      'jQuery':'jquery'
+      'jquery':'jquery'
     })
   ],
   output:{
@@ -35,7 +35,17 @@ module.exports={
       {
         loader: 'babel-loader',
         query:{
-          presets:['react', 'es2015','stage-0']
+          presets:['react', 'es2015','stage-0'],
+          "env": {
+                "test": {
+                    "plugins": [
+                                [ "babel-plugin-webpack-alias", {
+                                      "config": "${PWD}/webpack.config.test.js"
+                                    }
+                                  ]
+                                ]
+                        }
+                  }
         },
         test: /\.jsx?$/,
         exclude:/(node_modules|bower_components )/
