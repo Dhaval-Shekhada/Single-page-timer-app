@@ -1,7 +1,8 @@
 var expect = require('expect');
 import React from 'react';
 import ReactDOM from 'react-dom';
-import $ from 'jQuery';
+//import jQuery from 'jquery';
+var $  = require('jquery/dist/jquery.min');
 var TestUtils = require('react/lib/ReactTestUtils');
 //import TestUtils from 'react-addons-test-utils'
 
