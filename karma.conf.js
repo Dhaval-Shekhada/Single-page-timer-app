@@ -7,7 +7,7 @@ module.exports =function(config){
   //var isCi = process.env.CONTINUOUS_INTEGRATION === 'true',
 
  config.set({
-  browsers: [process.env.CONTINUOUS_INTEGRATION ?'Firefox':'Chrome'],
+  browsers: ['Chrome'],
   singleRun: true,
   frameworks:['mocha'],
 
@@ -26,7 +26,7 @@ module.exports =function(config){
   webpackServer:{
     noInfo: true
   }
-  
+
 });
 
 
