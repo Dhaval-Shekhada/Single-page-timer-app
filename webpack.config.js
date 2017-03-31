@@ -1,16 +1,16 @@
 var webpack = require('webpack');
 module.exports={
   entry:['script!jquery/dist/jquery.min.js',
-    'script!foundation-sites/dist/foundation.min.js',
+    'script!foundation-sites/dist/js/foundation.min.js',
     './app/app.jsx'
   ],
   externals: {
-    jquery:'jquery'
+    jquery:'jQuery'
   },
   plugins: [
     new webpack.ProvidePlugin({
       '$':'jquery',
-      'jquery':'jquery'
+      'jQuery':'jquery'
     })
   ],
   output:{
@@ -25,7 +25,8 @@ module.exports={
       Timer:'app/components/Timer/Timer.jsx',
       Countdown:'app/components/Countdown/Countdown.jsx',
       Clock:'app/components/Timer/Clock.jsx',
-      applicationStyles:'app/styles/app.scss'
+      applicationStyles:'app/styles/app.scss',
+      FormCounter:'app/components/Countdown/FormCounter.jsx'
 
     },
     extensions:['','.js','.jsx']
