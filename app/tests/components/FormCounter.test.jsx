@@ -1,9 +1,9 @@
 var expect = require('expect');
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from 'react';
+import ReactDOM from 'react-dom';
 import $ from 'jQuery';
-//var TestUtils = require('react-addons-test-utils');
-import TestUtils from 'react-addons-test-utils'
+var TestUtils = require('react/lib/ReactTestUtils');
+//import TestUtils from 'react-addons-test-utils'
 
 var FormCounter = require('FormCounter');
 
