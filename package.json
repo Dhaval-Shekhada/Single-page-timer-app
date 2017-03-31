@@ -40,6 +40,7 @@
     "expect": "1.14.0",
     "foundation-sites": "^6.2.0",
     "ghooks": "2.0.0",
+    "istanbul": "0.4.5",
     "jquery": "^2.2.1",
     "karma": "0.13.22",
     "karma-chai": "0.1.0",
@@ -65,8 +66,8 @@
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
     },
-    "ghooks":{
-      "pre-commit":"npm run test"
+    "ghooks": {
+      "pre-commit": "npm run test"
     }
   }
 }
