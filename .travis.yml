@@ -5,11 +5,10 @@ cache:
 notifications:
   email: false
 node_js:
-  - '7'
-  - '6'
+  - "stable"
 befor_install:
-  - npm i -g npm@latest
-  - "export CHROME_BIN = chromium-browser"
+  - stty cols 80
+
 
 
 dist: trusty
