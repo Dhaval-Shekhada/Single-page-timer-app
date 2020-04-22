@@ -41,7 +41,7 @@
     "foundation-sites": "^6.2.0",
     "ghooks": "2.0.0",
     "istanbul": "0.4.5",
-    "jquery": "^2.2.1",
+    "jquery": "^3.5.0",
     "karma": "0.13.22",
     "karma-chai": "0.1.0",
     "karma-chrome-launcher": "0.2.2",
